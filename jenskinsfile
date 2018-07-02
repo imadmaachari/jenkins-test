@@ -1,6 +1,5 @@
 pipline {
 	agent any
-	
 	stages{
 		stage('Compile Stage'){
 			steps{
