@@ -4,7 +4,7 @@ pipline {
 		stage('Compile Stage'){
 			steps{
 					withMaven(maven:'maven_3_5_4'){
-					sh 'mvn clean compile'
+					sh 'mvnw clean compile'
 				}
 			}
 
@@ -12,14 +12,14 @@ pipline {
 		stage('Testing Stage'){
 			steps{
 				withMaven(maven:'maven_3_5_4'){
-					sh 'mvn test'
+					sh 'mvnw test'
 				}
 			}
 		}
 		stage('Deployment Stage'){
 			steps{
 				withMaven(maven:'maven_3_5_4'){
-					sh 'mvn deploy'
+					sh 'mvnw deploy'
 				}
 			}
 		}
