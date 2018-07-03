@@ -64,6 +64,11 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
+	<distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>file:///C:\JAVA\local_deployment</url>
+       </repository>
+   </distributionManagement>
 </project>
